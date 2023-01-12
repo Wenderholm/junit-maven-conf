@@ -1,0 +1,141 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > Calculator</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">pl.zajavka</a>
+</div>
+
+<h1>Coverage Summary for Class: Calculator (pl.zajavka)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Calculator</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (6/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    87,5%
+  </span>
+  <span class="absValue">
+    (7/8)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package pl.zajavka;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import org.slf4j.Logger;
+<i class="no-highlight">4</i>&nbsp;
+<b class="fc"><i class="no-highlight">5</i>&nbsp;public class Calculator {</b>
+<b class="fc"><i class="no-highlight">6</i>&nbsp;    private static final Logger log = org.slf4j.LoggerFactory.getLogger(Calculator.class);</b>
+<i class="no-highlight">7</i>&nbsp;//    metoda na potrzeby ³apania wyjatków w klasie testowej
+<i class="no-highlight">8</i>&nbsp;//    public static int add(String left, String right){
+<i class="no-highlight">9</i>&nbsp;//        return Integer.parseInt(left) + Integer.parseInt(right);
+<i class="no-highlight">10</i>&nbsp;//    }
+<i class="no-highlight">11</i>&nbsp;
+<i class="no-highlight">12</i>&nbsp;    public static int add(int left, int right) {
+<i class="no-highlight">13</i>&nbsp;//        dane do sprawdzenia dzi³ania logback
+<i class="no-highlight">14</i>&nbsp;//        log.debug(&quot;some debug message&quot;);
+<i class="no-highlight">15</i>&nbsp;//        log.info(&quot;some info message&quot;);
+<i class="no-highlight">16</i>&nbsp;//        log.warn(&quot;some warn message&quot;);
+<i class="no-highlight">17</i>&nbsp;//        log.error(&quot;some error message&quot;);
+<b class="fc"><i class="no-highlight">18</i>&nbsp;        if (left &lt; 0) {</b>
+<b class="nc"><i class="no-highlight">19</i>&nbsp;            System.out.println(&quot;less then 0&quot;);</b>
+<i class="no-highlight">20</i>&nbsp;        }
+<i class="no-highlight">21</i>&nbsp;
+<b class="fc"><i class="no-highlight">22</i>&nbsp;        return left + right;</b>
+<i class="no-highlight">23</i>&nbsp;    }
+<i class="no-highlight">24</i>&nbsp;
+<i class="no-highlight">25</i>&nbsp;    public static int subtract(int left, int right) {
+<b class="fc"><i class="no-highlight">26</i>&nbsp;        return left - right;</b>
+<i class="no-highlight">27</i>&nbsp;    }
+<i class="no-highlight">28</i>&nbsp;
+<i class="no-highlight">29</i>&nbsp;    public static int multiple(int left, int right) {
+<b class="fc"><i class="no-highlight">30</i>&nbsp;        return left * right;</b>
+<i class="no-highlight">31</i>&nbsp;    }
+<i class="no-highlight">32</i>&nbsp;
+<i class="no-highlight">33</i>&nbsp;    public static int divide(int left, int right) {
+<b class="fc"><i class="no-highlight">34</i>&nbsp;        return left / right;</b>
+<i class="no-highlight">35</i>&nbsp;    }
+<i class="no-highlight">36</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-01-11 23:06</div>
+</div>
+</body>
+</html>
